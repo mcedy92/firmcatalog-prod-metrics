@@ -1,0 +1,49 @@
+name = "firmlocator-metrics"
+main = "src/router.ts"
+compatibility_date = "2025-12-14"
+account_id = "971c8f674b2ab24b0be8e10596451a67"
+[[kv_namespaces]]
+binding = "METRICS_TOTAL"
+id = "77e6d69f70894036be50de8ebbbb00a4"
+[[d1_databases]]
+binding = "DB"
+database_name = "catalog-db"
+database_id = "5e09eff7-abd7-4ca6-bb4d-167bb83eaded"
+[[queues.consumers]]
+queue = "events-queue"
+max_batch_size = 100
+max_batch_timeout = 30
+[vars]
+CF_ZONE_TAG = "30ea2df96cf258b13d9bbc2342267f4e"
+CF_API_TOKEN = "FugGKnLMnYxPfx6MglTfNY88y-O8hOrNXCUFQiAu"
+[triggers]
+crons = ["*/2 * * * *"]
+
+[[routes]]
+pattern = "metrics.firmlocator.com"
+custom_domain = true
+[[routes]]
+pattern = "api.firmlocator.com/api/reports/*"
+zone_name = "firmlocator.com"
+[observability]
+enabled = false
+head_sampling_rate = 1
+
+[observability.logs]
+enabled = true
+head_sampling_rate = 1
+persist = true
+invocation_logs = true
+
+[observability.traces]
+enabled = false
+persist = true
+head_sampling_rate = 1
+
+
+
+
+
+[[routes]]
+pattern = "reports.firmlocator.com"
+custom_domain = true
