@@ -10,7 +10,7 @@ binding = "DB"
 database_name = "catalog-db"
 database_id = "5e09eff7-abd7-4ca6-bb4d-167bb83eaded"
 [[queues.consumers]]
-queue = "events-queue-v2"
+queue = "events-queue-v2-v2"
 max_batch_size = 100
 max_batch_timeout = 30
 [vars]
