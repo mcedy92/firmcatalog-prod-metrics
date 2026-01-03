@@ -1,7 +1,7 @@
 // src/events-consumer.ts
 import type { BaseEnv, QueueEvent, EventType } from "../../worker/src/core/types";
 
-// Тук не ти трябва EVENTS_QUEUE, само DB.
+// Тук не ти трябва events_queue_v2, само DB.
 
 export default {
   async queue(batch: any, env: BaseEnv): Promise<void> {
