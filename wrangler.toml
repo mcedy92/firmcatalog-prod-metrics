@@ -1,4 +1,4 @@
-name = "firmlocator-prod-metrics"
+name = "firmcatalog-prod-metrics"
 main = "src/router.ts"
 compatibility_date = "2025-12-14"
 account_id = "971c8f674b2ab24b0be8e10596451a67"
