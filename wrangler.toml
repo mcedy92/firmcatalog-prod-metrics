@@ -7,8 +7,8 @@ binding = "METRICS_TOTAL"
 id = "77e6d69f70894036be50de8ebbbb00a4"
 [[d1_databases]]
 binding = "DB"
-database_name = "catalog-db"
-database_id = "5e09eff7-abd7-4ca6-bb4d-167bb83eaded"
+database_name = "firmlocator-v2"
+database_id = "18496b97-85a6-473f-9e36-4a727a262a9a"
 [[queues.consumers]]
 queue = "events-queue-v2"
 max_batch_size = 100
